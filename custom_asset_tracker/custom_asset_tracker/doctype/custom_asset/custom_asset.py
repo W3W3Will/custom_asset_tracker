@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class custom_asset(Document):
+class CustomAsset(Document):
 	pass

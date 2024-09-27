@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: MOVE-{asset_name}-{###}",
+ "creation": "2024-09-26 10:44:32.760732",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_y6n8",
+  "amended_from",
+  "asset",
+  "asset_name",
+  "purpose_of_transfer",
+  "employee_transfer_section",
+  "from_employee",
+  "column_break_jvin",
+  "to_employee",
+  "location_transfer_section",
+  "from_location",
+  "column_break_nwvi",
+  "to_location"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_y6n8",
+   "fieldtype": "Section Break",
+   "label": "Asset"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Custom Asset Movement",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "asset",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Asset",
+   "options": "Custom Asset",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purpose_of_transfer",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Purpose of Transfer",
+   "options": "Employee Transfer\nLocation Transfer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_transfer_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Transfer"
+  },
+  {
+   "fieldname": "from_employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "From Employee",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jvin",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_employee",
+   "fieldtype": "Link",
+   "label": "To Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "location_transfer_section",
+   "fieldtype": "Section Break",
+   "label": "Location Transfer"
+  },
+  {
+   "fieldname": "from_location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "From Location",
+   "options": "Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nwvi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_location",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "To Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "asset_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Asset Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-26 16:26:48.516615",
+ "modified_by": "Administrator",
+ "module": "Custom Asset Tracker",
+ "name": "Custom Asset Movement",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

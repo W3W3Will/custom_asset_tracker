@@ -5,5 +5,6 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestCustomAsset(FrappeTestCase):
+class TestCustomAssetMovement(FrappeTestCase):
 	pass
+

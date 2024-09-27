@@ -1,12 +1,17 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2024-09-25 13:40:16.105296",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_rtcg",
-  "asset_name"
+  "asset_name",
+  "location",
+  "naming_series",
+  "current_holder",
+  "amended_from"
  ],
  "fields": [
   {
@@ -20,19 +25,48 @@
    "label": "Asset Name",
    "no_copy": 1,
    "options": "custom_asset",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_holder",
+   "fieldtype": "Link",
+   "label": "Current Holder",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Custom Asset",
    "print_hide": 1,
    "read_only": 1,
-   "reqd": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Item Series",
+   "options": "ASS-ELEC\nASS-TRANSPORT\nASS-EQUIP\nASS-DOC",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2024-09-25 13:40:40.007368",
+ "modified": "2024-09-26 17:57:20.048412",
  "modified_by": "Administrator",
  "module": "Custom Asset Tracker",
- "name": "custom_asset",
+ "name": "Custom Asset",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -45,7 +79,6 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],
