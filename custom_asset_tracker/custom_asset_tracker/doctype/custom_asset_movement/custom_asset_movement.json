@@ -11,6 +11,7 @@
   "asset",
   "asset_name",
   "purpose_of_transfer",
+  "transfer_date",
   "employee_transfer_section",
   "from_employee",
   "column_break_jvin",
@@ -105,12 +106,20 @@
    "in_list_view": 1,
    "label": "Asset Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "transfer_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Transfer Date",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-09-26 16:26:48.516615",
+ "modified": "2024-09-30 16:12:34.893603",
  "modified_by": "Administrator",
  "module": "Custom Asset Tracker",
  "name": "Custom Asset Movement",
