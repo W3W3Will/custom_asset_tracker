@@ -244,4 +244,4 @@ doctype_js = {#"doctype" : "public/js/doctype.js"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
-fixtures = ["Custom Asset"]
+fixtures = ["Custom Asset", "Custom Field"]
