@@ -44,7 +44,7 @@ app_license = "mit"
 
 # include js in doctype views
 doctype_js = {#"doctype" : "public/js/doctype.js"
-                "Sales Order" : "public/custom_script/sales_order_custom.js"
+                "Asset" : "public/custom_script/asset_custom.js"
               }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
@@ -244,4 +244,4 @@ doctype_js = {#"doctype" : "public/js/doctype.js"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
-fixtures = ["Custom Asset", "Custom Field"]
+fixtures = ["Custom Field", "Print Format"]
